@@ -1,18 +1,31 @@
 <?php
 
-$capitales = array(
-    array ('Allemagne','Berlin' ,'lien'),
-    array ('France' ,'Paris', 'Lien'),
-    array ('Italie' , 'Rome','Lien'),
-    array ('USA' , 'Washington','Lien')
-);
+$LesPays = [
+    'France' => 'Paris',
+    'Allemange' => 'Berlin',
+    'USA' => 'Washington',
+    'Italie' => 'Rome'
+];
 
-function afficherTableHTML($capitales)
+function afficherTableHTML($array)
 {
-    echo "<table border='1'><tr>  <td> <b> Pays </b></td>  <td> <b>Capitale </b> </td>  <td> <b> Lien Wiki </b></td>  </tr>";
-    foreach ($capitales as $key => $value) {
-        echo "<tr><td> $key </td><td> $value </td></tr>";
+    echo "<table>
+            <tr><th>Pays</th><th>Capitales</th><th>Lien Wiki</th></tr>";
+    foreach ($array as $pays => $capitale) {
+        echo "<tr><td style='padding: 10px;'>" . strtoupper($pays) . "</td><td>" . $capitale . "</td><td><a href='https://fr.wikipedia.org/wiki/" . $capitale . "' target='_blank'>Lien</a></td></tr>";
     }
     echo "</table>";
 }
-afficherTableHTML($capitales);
+?>
+</table>
+<style>
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+</style>
+<?php 
+
+afficherTableHTML($LesPays);
+?>
