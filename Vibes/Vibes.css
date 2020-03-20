@@ -39,7 +39,7 @@ section {
     text-align: center;
 }
 
-nav {
+.navbar {
     font-size: 2em;
 }
 
@@ -56,19 +56,6 @@ nav {
 .baniere2 {
     justify-content: flex;
 }
-
-/* .gallery {
-     margin: 0;
-     width: 25%;
-     height: 200px;
-     overflow: hidden;
-     cursor: pointer;
-     position: relative;
-     display: flex;
- }
- .row {
-     display: flex;
- } */
 
 #gallery-imgs {
     display: flex;
