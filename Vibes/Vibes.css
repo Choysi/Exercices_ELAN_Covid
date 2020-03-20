@@ -1,0 +1,140 @@
+body {
+    background-color: #F8F9FA;
+}
+
+section {
+    margin: 5rem;
+}
+
+.page {
+    background-color: #e0e0e0 !important;
+}
+
+.bg-light {
+    background-color: none;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.card {
+    border: 0px solid rgba(0, 0, 0, .125);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.card-text {
+    font-style: normal;
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+}
+
+nav {
+    font-size: 2em;
+}
+
+.jumbotron {
+    padding: 1rem 1rem;
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #343A40;
+    text-decoration: none;
+}
+
+.baniere2 {
+    justify-content: flex;
+}
+
+/* .gallery {
+     margin: 0;
+     width: 25%;
+     height: 200px;
+     overflow: hidden;
+     cursor: pointer;
+     position: relative;
+     display: flex;
+ }
+ .row {
+     display: flex;
+ } */
+
+#gallery-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#gallery-imgs figure {
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+#gallery-imgs figure .overlay {
+    background-color: rgba(240, 125, 200, 0.4);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink-color);
+    display: flex;
+    transition: opacity 0.8s;
+    opacity: 0;
+}
+
+#gallery-imgs figure:hover .overlay {
+    opacity: 0.8;
+}
+
+#gallery-imgs figure img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.8s;
+}
+
+#gallery-imgs figure:hover img {
+    transform: scale(1.5);
+}
+
+.nav-link active {
+    color: #343A40;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #343A40;
+    text-decoration: none;
+}
+
+.blue-text {
+    color: #6c757d !important;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #212121 !important;
+}
+
+.flex {
+    width: 100%;
+    height: auto;
+}
