@@ -14,6 +14,20 @@ section {
     background-color: none;
 }
 
+.pangolin {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
 .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
