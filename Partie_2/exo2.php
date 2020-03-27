@@ -1,11 +1,11 @@
 <?php
 
-$capitales = array(
+$capitales = [
     'Allemagne' => 'Berlin',
     'France' => 'Paris',
     'Italie' => 'Rome',
     'USA' => 'Washington'
-);
+];
 
 function afficherTableHTML($capitales)
 {
@@ -13,6 +13,6 @@ function afficherTableHTML($capitales)
     foreach ($capitales as $key => $value) {
         echo "<tr><td> $key </td><td> $value </td></tr>";
     }
-    echo "</table>";
+    return "</table>";
 }
 afficherTableHTML($capitales);

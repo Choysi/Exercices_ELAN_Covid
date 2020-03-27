@@ -1,6 +1,6 @@
 <?php
 
-$tableauValeurs = array(true, 'texte', 10, 25.369, array("valeur1", "valeur2"));
+$tableauValeurs = [true, 'texte', 10, 25.369, array("valeur1", "valeur2")];
 
 function varDump($tableauValeurs)
 {
@@ -8,4 +8,4 @@ function varDump($tableauValeurs)
         echo var_dump($value) . "<br>";
     }
 }
-varDump($tableauValeurs);
+return varDump($tableauValeurs);

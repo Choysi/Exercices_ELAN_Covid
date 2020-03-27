@@ -3,13 +3,8 @@
 
 <body>
 
-    <center><button onclick="ELAN()">Elan Formation</button></center>
+    <center><a href="https://elan-formation.eu/)" target="_blank">Elan Formation</a></center>
 
-    <script>
-        function ELAN() {
-            window.open("https://elan-formation.eu/");
-        }
-    </script>
 
 </body>
 

@@ -3,13 +3,13 @@ $elements = ['Monsieur', 'Madame', 'Mademoiselle'];
 
 function alimenterListeDeroulante($array)
 {
-    echo "<label for='select'>Affichage :</label><br><br>
-          <select id='select'>";
+    echo "<form><label for='select'>Affichage :</label><br><br>
+          <select id='select'></form>";
     foreach ($array as $statut) {
         $selection = strtolower($statut);
         echo "<option value='$selection'>$statut</option>";
     }
-    echo "</select>";
+    return "</select>";
 }
 
 alimenterListeDeroulante($elements);
