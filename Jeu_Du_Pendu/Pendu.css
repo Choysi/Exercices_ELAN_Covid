@@ -1,0 +1,13 @@
+body.Lettre {
+    margin-top: 22em;
+    background-color: #F8F9FA;
+}
+
+body.winLoose {
+    margin-top: 8em;
+    background-color: #FFFFFF;
+}
+
+.erreurs {
+    color: red;
+}
