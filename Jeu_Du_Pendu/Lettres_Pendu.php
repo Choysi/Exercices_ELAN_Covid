@@ -4,7 +4,7 @@ session_start();
 
 if (isset($_POST["mot"])) {
     if (strlen($_POST["mot"]) > 27) {
-        header('Location: Mot.php');
+        header('Location: index.php');
     }
     $_SESSION["nrberreur"] = 0;
     $_SESSION["First"] = $_POST['mot'];
@@ -17,7 +17,7 @@ if (isset($_POST["mot"])) {
     }
 }
 if (empty($_SESSION["First"])) {
-    header('Location: Mot.php');
+    header('Location: index.php');
 }
 
 ?>
@@ -63,12 +63,87 @@ if (empty($_SESSION["First"])) {
     </div>
 
     <center>
+   
         <p class="erreurs">
             <?php
             echo $_SESSION['nrberreur'] . " erreurs";
+            
             ?>
         </p>
     </center>
+
+    <?php
+$pendu[0] =
+' -------
+|/    | 
+|
+|
+|
+|
+| 
+/|\
+-------------';
+$pendu[1] =
+' -------
+|/    | 
+|     o
+|
+|
+|
+| 
+/|\
+-------------';
+$pendu[2] =
+' -------
+|/    | 
+|     o
+|     |
+|     |
+|
+| 
+/|\
+-------------';
+$pendu[3] =
+' -------
+|/    | 
+|     o
+|     |
+|     |
+|    /
+| 
+/|\
+-------------';
+$pendu[4] =
+' -------
+|/    | 
+|     o
+|     |
+|     |
+|    / \
+| 
+/|\
+-------------';
+$pendu[5] =
+' -------
+|/    | 
+|     o
+|   --|
+|     |
+|    / \
+| 
+/|\
+-------------';
+$pendu[6] =
+' -------
+|/    | 
+|     o
+|   --|--
+|     |
+|    / \
+| 
+/|\
+-------------';
+    ?>
 </body>
 
 </html>

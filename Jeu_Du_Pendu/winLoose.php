@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (empty($_SESSION["First"])) {
-    header('Location: Mot.php');
+    header('Location: index.php');
 }
 ?>
 
@@ -23,7 +23,7 @@ if (empty($_SESSION["First"])) {
         <?php
         //if ($_SESSION["nbrerreur"] = "perdu") {
 
-        //header('Location: Mot.php');
+        //header('Location: index.php');
         //} else {
         // $_SESSION["nbrerreur"]  = $pendu[0] = header('Location: Lettres_Pendu.php');
         //}
@@ -44,7 +44,7 @@ if (empty($_SESSION["First"])) {
     </div>
 
     <div class="d-flex justify-content-center">
-    <form action="Mot.php" method="post">
+    <form action="index.php" method="post">
     <button class="btn btn-outline-success my-2 my-sm-2 " type="submit">Nouvelle partie</button>
         </form>
     </div>
