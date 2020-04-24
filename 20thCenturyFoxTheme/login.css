@@ -1,0 +1,57 @@
+body{
+    padding: 0;
+
+}
+
+@font-face {
+    src: url(fonts/tcf_90s_v2_by_629lyric-d9lbbro.ttf);
+    font-family: tcf;
+}
+
+.login {
+    font-size: 20px;
+    line-height: 50px;
+    font-family: tcf;
+}
+
+.link {
+  font-family: tcf;
+  text-align: center;
+}
+a.nav-link {
+    color: black;
+}
+ .audio {
+    padding: 5px;
+ }
+
+ @import "compass/css3";
+
+.btn{
+   cursor:pointer;
+   display:inline-block;
+   padding:10px;
+   background: #FFC107;
+   border-radius: 2px;
+   color: #fff;
+   text-transform:uppercase;
+   line-height:20px;
+   @include transition(box-shadow .25s ease);
+   
+}
+
+  
+  .laser-beam {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 3px;
+    height: 500%;
+    background: rgba(99,195,231,0.6);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(99,195,231,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(99,195,231,1);
+    box-shadow: 0px 0px 15px 0px rgba(99,195,231,1);
+    @include transform-origin(0, 100%);
+    -webkit-animation: laser 7s infinite;
+    
+  }
